@@ -6,6 +6,8 @@ import os
 
 load_dotenv ()
 
+MONGO_URL=os.getenv('MONGO_URL')
+
 app = Flask(__name__)
 
 client = MongoClient("MONGO_URL")
