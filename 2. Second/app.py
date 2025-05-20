@@ -4,8 +4,7 @@ from pymongo.errors import PyMongoError
 
 app = Flask(__name__)
 
-# Replace with your MongoDB Atlas connection string
-client = MongoClient("mongodb+srv://<username>:<password>@cluster0.mongodb.net/?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://lakshjain0498:Nj0H08NMee06xFel@cluster1.fogvrve.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")
 db = client["mydatabase"]
 collection = db["users"]
 
