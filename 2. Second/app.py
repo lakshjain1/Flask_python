@@ -1,10 +1,14 @@
 from flask import Flask, render_template, request, redirect, url_for
 from pymongo import MongoClient
 from pymongo.errors import PyMongoError
+from dotenv import load_dotenv
+import os
+
+load_dotenv ()
 
 app = Flask(__name__)
 
-client = MongoClient("mongodb+srv://lakshjain0498:123456@cluster1.fogvrve.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")
+client = MongoClient("MONGO_URL")
 db = client["mydatabase"]
 collection = db["users"]
 
