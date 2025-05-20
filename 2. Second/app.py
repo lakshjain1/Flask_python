@@ -4,7 +4,7 @@ from pymongo.errors import PyMongoError
 
 app = Flask(__name__)
 
-client = MongoClient("mongodb+srv://lakshjain0498:Nj0H08NMee06xFel@cluster1.fogvrve.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")
+client = MongoClient("mongodb+srv://lakshjain0498:123456@cluster1.fogvrve.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")
 db = client["mydatabase"]
 collection = db["users"]
 
